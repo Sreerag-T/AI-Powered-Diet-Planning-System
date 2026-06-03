@@ -1,0 +1,135 @@
+/* Premium Lexcurious Register Styles */
+body {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  font-family: 'Playfair Display', serif;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Unique container styling */
+.lux-register-container {
+  max-width: 480px;
+  margin: 80px auto;
+  background-color: #111111;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Heading */
+.lux-register-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Labels */
+.lux-form-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #d4d4d4;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.lux-form-control {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lux-form-control:focus {
+  outline: none;
+  border-color: gold;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  background-color: #2a2a2a;
+}
+
+/* Error state */
+.lux-is-invalid {
+  border-color: #ff4d4f !important;
+}
+
+.lux-invalid-feedback {
+  color: #ff4d4f;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.lux-btn-primary {
+  background-color: gold;
+  color: #111;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lux-btn-primary:hover {
+  background-color: #e6c200;
+  transform: translateY(-2px);
+}
+
+.lux-btn-secondary {
+  background-color: #222;
+  color: gold;
+  border: 1px solid gold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.lux-btn-secondary:hover {
+  background-color: gold;
+  color: #111;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .lux-register-container {
+    padding: 30px 20px;
+  }
+
+  .lux-register-container h1 {
+    font-size: 2rem;
+  }
+}
