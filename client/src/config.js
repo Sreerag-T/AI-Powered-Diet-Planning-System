@@ -1,7 +1,6 @@
 const token = localStorage.getItem('token');
 
-export const base = "http://localhost:5000/";
-
+export const base = "https://ai-powered-diet-planning-system.onrender.com/";
 
 const config = {
     headers: {
@@ -9,4 +8,4 @@ const config = {
     },
   };
 
-  export default config
+export default config;
